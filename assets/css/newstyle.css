@@ -1,0 +1,51 @@
+.index_calc_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px 0px 10px;
+
+}
+
+.calc_form_item{
+    margin-right: 20px;
+
+}
+
+.calc_form_item i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.calc_form_item input{
+    padding: 12px 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+.owner-breadcrumb-bg{
+    background-image: url('../img/gruz-owner.jpg');
+    background-size: cover;
+}
+
+.inner_page_title{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.inner_page_title::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 80px;
+    height: 3px;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -35px;
+    background-color: rgb(0, 109, 183);
+}
+
+
+/*owner map style */
