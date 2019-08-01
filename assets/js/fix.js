@@ -23,3 +23,11 @@ $("#delivery-calculator-2").click(function (e) {
     $(".calculator-before-result-text").removeClass('active');
     $(".calculator-result").addClass('active');
 });
+
+
+//MODAL IN MODAL
+
+// $("#enter-modal").modal("hide");//закрыть все окна
+// $("#lost_pass_modal").modal('show');//открыть нужное
+
+    $('#enter-modal').hide();

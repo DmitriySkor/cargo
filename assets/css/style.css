@@ -129,6 +129,7 @@ button.boxed-btn {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
+    cursor: pointer;
 }
 
 a.boxed-btn:hover,
