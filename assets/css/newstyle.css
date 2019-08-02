@@ -2,14 +2,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background: rgba(255, 255, 255, 0.5);
-    padding: 20px 0px 10px;
-
+    padding: 20px;
 }
 
 .calc_form_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 20px;
+    margin-bottom: 0;
 
 }
 
@@ -19,9 +22,11 @@
 }
 
 .calc_form_item input {
-    padding: 12px 5px;
+    padding: 12px;
     border-radius: 3px;
     border: none;
+    height: 51px;
+    width: calc(100% - 20px);
 }
 
 .owner-breadcrumb-bg {
@@ -100,7 +105,7 @@
 .contain-calculator,
 .calculator-before-result-text,
 .calculator-result {
-    padding: 80px 0 50px;
+    padding: 20px 0 50px;
 }
 
 .text-align-right {
@@ -128,6 +133,14 @@
     display: block;
 }
 
+#pills-tab .nav-link.active {
+    background-color: #58bed3 !important;
+}
+
+.nav-pills .nav-link {
+    color: rgb(78, 88, 97);;
+}
+
 /*------------------*/
 .search_result_map {
     display: none;
@@ -150,45 +163,73 @@
     height: 600px;
 }
 
-.modal{
+.road_map iframe {
+    width: 100%;
+    height: 600px;
+}
+
+
+.modal {
     padding-right: 0px !important;
 }
 
-.modal_form_group{
+.modal_form_group {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.modal_form_group>input{
+.modal_form_group > input {
     width: 100%;
     padding: 8px 20px;
     margin-bottom: 15px;
     font-size: 16px;
 }
 
-.memory_pass_wrap{
+.memory_pass_wrap {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.memory_pass_wrap>label{
+.memory_pass_wrap > label {
     margin-left: 5px;
     margin-bottom: 0px;
 }
 
-.modal-footer{
+.modal-footer {
     justify-content: space-between;
 }
-.modal_btn_group{
+
+.modal_btn_group {
     font-size: 16px;
 }
 
-.modal-title{
+.modal-title {
     font-weight: 700;
 }
 
-.modal-footer>
+/*.modal-footer>*/
+
+
+/*------------------*/
+.table-striped tbody tr {
+    transition: ease-in-out 300ms;
+}
+
+.table-striped tbody tr:hover {
+    background-color: rgba(88, 190, 211, 1);
+    transition: ease-in-out 300ms;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .05);
+    transition: ease-in-out 300ms;
+}
+
+.table-striped tbody tr:nth-of-type(odd):hover {
+    background-color: rgba(88, 190, 211, 1);
+    transition: ease-in-out 300ms;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transpix - Transport & Logistic HTML Template</title>
@@ -28,11 +28,10 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- new style css -->
     <link rel="stylesheet" href="assets/css/newstyle.css">
+    <!-- media css -->
+    <link rel="stylesheet" href="assets/css/media.css">
     <!-- jquery js -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
-
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
-    <script src="icon_customImage.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -142,15 +141,254 @@
             <div class="col-lg-12">
                 <h2 class="inner_page_title">В системе доступно<span> 580 </span>грузов</h2>
             </div>
+            <div class="col-lg-12">
+                <div class="search_block">
+                    <form action="" class="search_form">
+                        <div class="input_group">
+                            <div class="input_group_wrap">
+                                <label>Место погрузки</label>
+                                <input type="text" placeholder="Выберите место погрузки">
+                            </div>
+                            <div class="input_group_wrap input_group_radius">
+                                <label>Радиус</label>
+                                <input type="text" placeholder="км">
+                            </div>
+                            <div class="input_group_wrap">
+                                <label>Место выгрузки</label>
+                                <input type="text" placeholder="Выберите место выгрузки">
+                            </div>
+                            <div class="input_group_wrap input_group_radius">
+                                <label>Радиус</label>
+                                <input type="text" placeholder="км">
+                            </div>
+                            <div class="input_group_wrap">
+                                <label>День погрузки</label>
+                                <input type="text" placeholder="Любой">
+                            </div>
+                            <div class="input_group_wrap">
+                                <label>Тип транспорта</label>
+                                <select id="transportType">
+                                    <option>Любой</option>
+                                    <option value="1">1.5т - 15м3 (фургон)</option>
+                                    <option value="2">3.5т - 24м3 (фургон)</option>
+                                    <option value="10">5т - 36м3 (открытый)</option>
+                                    <option value="3">5т - 36м3 (тентованный)</option>
+                                    <option value="11">5т - 36м3 (цельнометаллический)</option>
+                                    <option value="12">5т - 36м3 (изотермический)</option>
+                                    <option value="4">5т - 36м3 (рефрижератор)</option>
+                                    <option value="13">10т - 45м3 (открытый)</option>
+                                    <option value="5">10т - 45м3 (тентованный)</option>
+                                    <option value="14">10т - 45м3 (цельнометаллический)</option>
+                                    <option value="15">10т - 45м3 (изотермический)</option>
+                                    <option value="6">10т - 45м3 (рефрижератор)</option>
+                                    <option value="16">24т - 86м3 (открытый)</option>
+                                    <option value="7">24т - 86м3 (тентованный)</option>
+                                    <option value="17">24т - 86м3 (цельнометаллический)</option>
+                                    <option value="18">24т - 86м3 (изотермический)</option>
+                                    <option value="8">24т - 86м3 (рефрижератор)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="search_block_btn btn-group btn-group-toggle" data-toggle="buttons">
+                        <label id="option1" class="btn btn-secondary active">
+                            <input type="radio" name="options" autocomplete="off" checked> На карте
+                        </label>
+                        <label id="option2" class="btn btn-secondary">
+                            <input type="radio" name="options" autocomplete="off"> В таблице
+                        </label>
+                    </div>
+                </div>
+                <div class="search_result_container">
+                    <div id="result_map" class="search_result_map active">
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CGeME-k-" frameborder="0" allowfullscreen="true"></iframe>
+                    </div>
+                    <div id="result_table" class="search_result_table">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="mt-5 mb-3">Калькулятор грузоперевозчика</h1>
+                <hr>
+            </div>
+            <div class="col-lg-7">
+                <div class="contain-calculator">
+                    <div class="contain-form">
+                        <form>
+                            <!--
+                            <div class="form-group">
+                                <p><strong>БЕЗ ВЫБОРА ТС</strong> – вы можете рассчитать по стандартной сцепке: Volvo FH12 и Schmitz S.CS Universal. <strong><a href="#">ВЫБЕРИТЕ ТС</a></strong> (это бесплатно), и расчет будет для Вашей модели транспортного средства!</p>
+                            </div>
+                            -->
+                            <div class="form-group row">
+                                <label for="shipping-point" class="col-sm-4 text-align-right">Выберите откуда</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="shipping-point" placeholder="прим. Москва" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="unloading-point" class="col-sm-4 text-align-right">Выберите куда</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="unloading-point" placeholder="прим. Владивосток" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="tons-of-loading" class="col-sm-4 text-align-right">Укажите вес тонн</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" id="tons-of-loading" value="1">
+                                </div>
+                                <label for="loading-volume" class="col-sm-4 text-align-right">Объем груза, м<sup>3</sup> </label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" id="loading-volume" value="1">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group row justify-content-center">
+                                <button type="submit" id="delivery-calculator-1" class="boxed-btn"><span>Расчитать</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="calculator-before-result-text active">
+                    <h4>Lorem ipsum</h4>
+                    <p>Dolor sit amet, consectetur adipisicing elit. Accusantium animi architecto, cumque dolores dolorum eius, eum explicabo fuga hic maiores maxime modi nam obcaecati odit
+                        officiis optio perspiciatis porro quaerat quam sint tempora totam vel veniam veritatis vero. Ab delectus dignissimos et in iure magni maiores optio pariatur quia unde?</p>
+                </div>
+                <div class="calculator-result">
+                    <div class="row">
 
-
-
-            <div id="map"></div>
-
-
-
-
-
+                        <div class="col-lg-12">
+                            <h3>
+                                Бухгалтер владельца грузовика
+                            </h3>
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            <div class="result-before-text">
+                                Идея ставки туда
+                            </div>
+                            <hr>
+                            <div class="result-text">
+                                16 500 р.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            <div class="result-before-text">
+                                Планируемая прибыль
+                            </div>
+                            <hr>
+                            <div class="result-text">
+                                6 174 р.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            <div class="result-before-text">
+                                Время доставки
+                            </div>
+                            <hr>
+                            <div class="result-text">
+                                1 день 2 часа
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            <div class="result-before-text">
+                                Расстояние
+                            </div>
+                            <hr>
+                            <div class="result-text">
+                                706 км
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            <div class="result-before-text">
+                                Идея ставки оттуда
+                            </div>
+                            <hr>
+                            <div class="result-text">
+                                23 300 р.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            <div class="result-before-text">
+                                Издержки
+                            </div>
+                            <hr>
+                            <div class="result-text">
+                                13 563 р.
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            <div class="result-before-text">
+                                Тариф туда
+                            </div>
+                            <hr>
+                            <div class="result-text">
+                                23.4 р./км
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            <div class="result-before-text">
+                                Тариф оттуда
+                            </div>
+                            <hr>
+                            <div class="result-text">
+                                33.0 р./км
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <hr>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row justify-content-center">
+                                <button type="button" class="boxed-btn"><span>Выберите свое ТС</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 no-padding">
+                <div id="road_map" class="road_map">
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CGeME-k-" frameborder="0" allowfullscreen="true"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -241,5 +479,8 @@
 <script src="assets/js/wow.min.js"></script>
 <!-- main js -->
 <script src="assets/js/main.js"></script>
+<!-- fix js -->
+<script src="assets/js/fix.js"></script>
+
 </body>
 </html>

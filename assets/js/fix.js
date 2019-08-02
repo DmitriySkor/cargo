@@ -30,4 +30,4 @@ $("#delivery-calculator-2").click(function (e) {
 // $("#enter-modal").modal("hide");//закрыть все окна
 // $("#lost_pass_modal").modal('show');//открыть нужное
 
-    $('#enter-modal').hide();
+$('#enter-modal').hide();

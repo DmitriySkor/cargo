@@ -1,0 +1,153 @@
+/*Медиазапросы диапазонные*/
+@media (min-width: 1601px) and (max-width: 1599px) {
+
+}
+
+@media (min-width: 1441px) and (max-width: 1600px) {
+
+}
+
+@media (min-width: 1367px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .index_calc_form {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .form-group.calc_form_item {
+        margin-right: 0;
+        width: calc(50% - 30px);
+    }
+
+    .form-group.calc_form_item i.fa {
+        width: 30px;
+        height: auto;
+    }
+
+    .calc_form_item input {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .index_calc_form {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .form-group.calc_form_item {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .form-group.calc_form_item i.fa {
+        width: 30px;
+        height: auto;
+    }
+
+    .calc_form_item input {
+        margin-bottom: 20px;
+    }
+
+    .calc_form_btn {
+        width: calc(100% - 34px);
+    }
+
+    .calc_form_btn .boxed-btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+
+}
+
+@media (min-width: 360px) and (max-width: 479px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+
+}
+
+
+/*Медиазапросы от 0*/
+@media (min-width: 0) and (max-width: 1600px) {
+
+}
+
+@media (min-width: 0) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 0) and (max-width: 1366px) {
+
+}
+
+@media (min-width: 0) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 0) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 0) and (max-width: 991px) {
+
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+
+}
+
+@media (min-width: 0) and (max-width: 575px) {
+    .text-align-right {
+        text-align: left;
+    }
+
+    .index_calc_form {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .form-group.calc_form_item {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .form-group.calc_form_item i.fa {
+        width: 30px;
+        height: auto;
+    }
+
+    .calc_form_item input {
+        margin-bottom: 20px;
+    }
+
+    .calc_form_btn {
+        width: calc(100% - 34px);
+    }
+
+    .calc_form_btn .boxed-btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 0) and (max-width: 479px) {
+
+}
+
+@media (min-width: 0) and (max-width: 360px) {
+
+}
