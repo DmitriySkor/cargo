@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transpix - Transport & Logistic HTML Template</title>
@@ -94,15 +94,12 @@
                                         </li>
                                         <li>
                                             <a href="#">Перевозчику</a>
-
                                         </li>
-
                                     </ul>
                                 </nav>
                             </div>
                             <div class="col-lg-3 col-12 position-lg-relative position-static">
                                 <div id="mobileMenu"></div>
-
                             </div>
                         </div>
                     </div>
@@ -114,9 +111,398 @@
 <!--   header area end   -->
 
 
+<div class="content_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contain-registration__form">
+                    <!-- multistep form -->
+                    <form id="msform">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active">User Category</li>
+                            <li>Account Information</li>
+                            <li>Personal data</li>
+                            <li>Machine data</li>
+                            <li>Driver data</li>
+                        </ul>
+                        <!-- fieldsets -->
 
+                        <fieldset>
+                            <h4 class="fs-title">Создание аккаунта - ШАГ 1</h4>
+                            <h6 class="fs-subtitle">Категория пользователя </h6>
+                            <div class="form-group">
+                                <div class="form-check form-group">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Я перевозчик
+                                    </label>
+                                </div>
+                                <div class="form-check form-group">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Я грузовладелец
+                                    </label>
+                                </div>
+                            </div>
 
+                            <button type="button" name="next" class="next boxed-btn"><span>Далее</span></button>
+                        </fieldset>
 
+                        <fieldset>
+                            <h4 class="fs-title">Создание аккаунта - ШАГ 2</h4>
+                            <h6 class="fs-subtitle">Данные учётной записи</h6>
+                            <div class="form-group row">
+                                <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword-1" class="col-sm-3 col-form-label">Введите пароль</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="inputPassword-1" placeholder="Введите пароль">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword-2" class="col-sm-3 col-form-label">Повторите пароль</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="inputPassword-2" placeholder="Повторите пароль">
+                                </div>
+                            </div>
+                            <button type="button" name="previous" class="previous boxed-btn"><span>Назад</span></button>
+                            <button type="button" name="next" class="next boxed-btn"><span>Далее</span></button>
+                        </fieldset>
+                        <fieldset>
+                            <h4 class="fs-title">Создание аккаунта - ШАГ 3</h4>
+                            <h6 class="fs-subtitle">Личные данные</h6>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="ati_number" class="col-sm-12 col-form-label">Номер в ATI</label>
+                                    <input type="text" class="form-control" id="ati_number" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="first_name" class="col-form-label">Фамилия</label>
+                                    <input type="text" class="form-control" id="first_name" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="last_name" class="col-form-label">Имя</label>
+                                    <input type="text" class="form-control" id="last_name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="middle_name" class="col-form-label">Отчество</label>
+                                    <input type="text" class="form-control" id="middle_name" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="choose_activity" class="col-form-label">Вид деятельности</label>
+                                    <select class="form-control" id="choose_activity">
+                                        <option value="">-- выберите значение --</option>
+                                        <option value="ИП">ИП — Индивидуальный предприниматель</option>
+                                        <option value="ООО">ООО — Общество с ограниченной ответственностью</option>
+                                        <option value="АО">АО — Акционерное общество</option>
+                                        <option value="ГУП">ГУП — Государственное унитарное предприятие</option>
+                                        <option value="ЗАО">ЗАО — Закрытое акционерное общество</option>
+                                        <option value="ОАО">ОАО — Открытое акционерное общество</option>
+                                        <option value="ПАО">ПАО — Публичное акционерное общество</option>
+                                        <option value="КТ">КТ — Коммандитное товарищество</option>
+                                        <option value="МП">МП — Муниципальное предприятие</option>
+                                        <option value="МУП">МУП — Муниципальное унитарное предприятие</option>
+                                        <option value="НПП">НПП — Научно-производственное предприятие</option>
+                                        <option value="СП">СП — Совместное предприятие</option>
+                                        <option value="ФГУП">ФГУП — Федеральное государственное унитарное предприятие</option>
+                                        <option value="ЧТУП">ЧТУП — Частное транспортное унитарное предприятие</option>
+                                        <option value="КХ">КХ — Крестьянское хозяйство</option>
+                                        <option value="ПК">ПК — Производственный кооператив</option>
+                                        <option value="ПТ">ПТ — Полное товарищество</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="designation" class="col-form-label">Название</label>
+                                    <input type="text" class="form-control" id="designation" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="city" class="col-form-label">Город</label>
+                                    <input type="text" class="form-control" id="city" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="phone" class="col-form-label">Телефон</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="region-of-work" class="col-form-label">Герион работы</label>
+                                    <input type="text" class="form-control" id="region-of-work" placeholder="">
+                                </div>
+                            </div>
+                            <button type="button" name="previous" class="previous boxed-btn"><span>Назад</span></button>
+                            <button type="button" name="next" class="next boxed-btn"><span>Далее</span></button>
+
+                        </fieldset>
+                        <fieldset>
+                            <h4 class="fs-title">Создание аккаунта - ШАГ 4</h4>
+                            <h6 class="fs-subtitle">Данные машины</h6>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Тягач полуприцеп</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Фургон и
+                                        прицеп</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Фургон</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="form-group row">
+                                        <label for="tractor_brand" class="col-sm-3 col-form-label">Марка тягача</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="tractor_brand" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="brand-of-semitrailer" class="col-sm-3 col-form-label">Марка полуприцепа</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="brand-of-semitrailer" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="tc-category" class="col-sm-3 col-form-label">Категория ТС</label>
+                                        <div class="col-sm-9">
+                                            <select class="form-control" id="tc-category">
+                                                <option value="1">1.5т - 15м3 (фургон)</option>
+                                                <option value="2">3.5т - 24м3 (фургон)</option>
+                                                <option value="10">5т - 36м3 (открытый)</option>
+                                                <option value="3">5т - 36м3 (тентованный)</option>
+                                                <option value="11">5т - 36м3 (цельнометаллический)</option>
+                                                <option value="12">5т - 36м3 (изотермический)</option>
+                                                <option value="4">5т - 36м3 (рефрижератор)</option>
+                                                <option value="13">10т - 45м3 (открытый)</option>
+                                                <option value="5">10т - 45м3 (тентованный)</option>
+                                                <option value="14">10т - 45м3 (цельнометаллический)</option>
+                                                <option value="15">10т - 45м3 (изотермический)</option>
+                                                <option value="6">10т - 45м3 (рефрижератор)</option>
+                                                <option value="16">24т - 86м3 (открытый)</option>
+                                                <option value="7">24т - 86м3 (тентованный)</option>
+                                                <option value="17">24т - 86м3 (цельнометаллический)</option>
+                                                <option value="18">24т - 86м3 (изотермический)</option>
+                                                <option value="8">24т - 86м3 (рефрижератор)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="BodyType" class="col-form-label">Тип кузова</label>
+                                            <select class="form-control" id="BodyType">
+                                                <option>Тент</option>
+                                                <option>Реф</option>
+                                                <option>Цельномет</option>
+                                                <option>Изотерм</option>
+                                                <option>Промтоварный фургон</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="carrying-capacity" class="col-form-label">Грузоподъёмность, тонн</label>
+                                            <input type="text" class="form-control" id="carrying-capacity" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="body-volume" class="col-form-label">Объём кузова, куб.м</label>
+                                            <input type="text" class="form-control" id="body-volume" placeholder="">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleFormControlSelect2">Особые условия</label>
+                                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                                                <option>Задняя</option>
+                                                <option>Верхняя</option>
+                                                <option>Боковая</option>
+                                                <option>Боковая с двух сторон</option>
+                                                <option>Боковая с двух сторон</option>
+                                                <option>Снятие стоек</option>
+                                                <option>Снятие поперечин</option>
+                                                <option>Полная растентовка</option>
+                                                <option>Гидроборт</option>
+                                                <option>Без ворот</option>
+                                                <option>Обрешетка</option>
+                                                <option>Аппарели</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="tractor_num" class="col-sm-3 col-form-label">Гос.№ тягача</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="tractor_num" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="semitrailer-num" class="col-sm-3 col-form-label">Гос.№ прицепа</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="semitrailer-num" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+                                </div>
+                            </div>
+                            <button type="button" name="previous" class="previous boxed-btn"><span>Назад</span></button>
+                            <button type="button" name="next" class="next boxed-btn"><span>Далее</span></button>
+                        </fieldset>
+                        <fieldset>
+                            <h4 class="fs-title">Создание аккаунта - ШАГ 5</h4>
+                            <h6 class="fs-subtitle">Данные водителя</h6>
+                            <div class="form-group row">
+                                <label for="surname" class="col-sm-3 col-form-label">Фамилия</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="surname" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="given-name" class="col-sm-3 col-form-label">Имя</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="given-name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="patronymic" class="col-sm-3 col-form-label">Отчество</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="patronymic" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Passport-ID" class="col-sm-3 col-form-label">Номер паспорта</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="Passport-ID" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Passport-Serial" class="col-sm-3 col-form-label">Серия паспорта</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="Passport-Serial" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Pa-Serial" class="col-sm-3 col-form-label">Серия в/у</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="Pa-Serial" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Pa-ID" class="col-sm-3 col-form-label">Номер в/у</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="Pa-ID" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="phone-num" class="col-sm-3 col-form-label">Телефон</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="phone-num" placeholder="">
+                                </div>
+                            </div>
+                            <button type="button" name="previous" class="previous boxed-btn"><span>Назад</span></button>
+                            <button type="button" name="submit" class="submit boxed-btn"><span>Отправить</span></button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>-->
+<script src='http://thecodeplayer.com/uploads/js/jquery.easing.min.js'></script>
+<script>
+    //jQuery time
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var left, opacity, scale; //fieldset properties which we will animate
+    var animating; //flag to prevent quick multi-click glitches
+
+    $(".next").click(function () {
+        if (animating) return false;
+        animating = true;
+
+        current_fs = $(this).parent();
+        next_fs = $(this).parent().next();
+
+        //activate next step on progressbar using the index of next_fs
+        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+        //show the next fieldset
+        next_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({opacity: 0}, {
+            step: function (now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale current_fs down to 80%
+                scale = 1 - (1 - now) * 0.2;
+                //2. bring next_fs from the right(50%)
+                left = (now * 50) + "%";
+                //3. increase opacity of next_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({'transform': 'scale(' + scale + ')'});
+                next_fs.css({'left': left, 'opacity': opacity});
+            },
+            duration: 800,
+            complete: function () {
+                current_fs.hide();
+                animating = false;
+            },
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+    });
+
+    $(".previous").click(function () {
+        if (animating) return false;
+        animating = true;
+
+        current_fs = $(this).parent();
+        previous_fs = $(this).parent().prev();
+
+        //de-activate current step on progressbar
+        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+        //show the previous fieldset
+        previous_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({opacity: 0}, {
+            step: function (now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale previous_fs from 80% to 100%
+                scale = 0.8 + (1 - now) * 0.2;
+                //2. take current_fs to the right(50%) - from 0%
+                left = ((1 - now) * 50) + "%";
+                //3. increase opacity of previous_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({'left': left});
+                previous_fs.css({'transform': 'scale(' + scale + ')', 'opacity': opacity});
+            },
+            duration: 800,
+            complete: function () {
+                current_fs.hide();
+                animating = false;
+            },
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+    });
+
+    $(".submit").click(function () {
+        return false;
+    })
+</script>
 
 <!--   footer section start    -->
 <footer>
@@ -213,7 +599,7 @@
             </div>
             <div class="modal-footer">
                 <div class="modal_btn_group">
-                    <a href="#" onclick="$('#enter-modal').modal('hide');" class="lost_pass" data-toggle="modal" data-target="#lost_pass_modal" >Забыли пароль</a>
+                    <a href="#" onclick="$('#enter-modal').modal('hide');" class="lost_pass" data-toggle="modal" data-target="#lost_pass_modal">Забыли пароль</a>
                 </div>
                 <button type="submit" class="boxed-btn"><span>Войти</span></button>
             </div>
