@@ -86,7 +86,7 @@
                                 <nav class="main-menu" id="mainMenu">
                                     <ul>
                                         <li>
-                                            <a href="#">Вход</a>
+                                            <a href="#" data-toggle="modal" data-target="#enter-modal">Вход</a>
                                         </li>
                                         <li>
                                             <a href="registration.html">Регистрация</a>
@@ -464,6 +464,60 @@
 </div>
 <!-- back to top area end -->
 
+<!--Enter Modal -->
+<div class="modal fade" id="enter-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="enter-modal1">Выполните вход</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="modal_enter_form">
+                    <div class="modal_form_group">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Пароль">
+                        <div class="memory_pass_wrap">
+                            <input type="checkbox"><label>Запомнить</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="modal_btn_group">
+                    <a href="#" onclick="$('#enter-modal').modal('hide');" class="lost_pass" data-toggle="modal" data-target="#lost_pass_modal">Забыли пароль</a>
+                </div>
+                <button type="submit" class="boxed-btn"><span>Войти</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Lost password modal -->
+<div class="modal fade" id="lost_pass_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="lost_pass_modal1">Восстановление пароля</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="modal_enter_form">
+                    <div class="modal_form_group">
+                        <input type="text" placeholder="Email">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="boxed-btn"><span>Отправить</span></button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- popper js -->
 <script src="assets/js/popper.min.js"></script>
@@ -481,6 +535,9 @@
 <script src="assets/js/main.js"></script>
 <!-- fix js -->
 <script src="assets/js/fix.js"></script>
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 </body>
 </html>
